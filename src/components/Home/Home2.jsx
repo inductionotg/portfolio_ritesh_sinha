@@ -35,15 +35,15 @@ function Home2() {
               </i>
               <br />
               <br />
-               My passion for developing products
+               My passion is for developing products
               with <b className="purple">React.js</b> and
               <i>
                 <b className="purple">
                   {" "}
-                  Reactjs,Typescript and Nextjs
+                  Typescript  &nbsp; Nextjs
                 </b>
               </i>
-              &nbsp; like
+              &nbsp; 
               <i>
                 <b className="purple"> Node.js</b>
               </i>
