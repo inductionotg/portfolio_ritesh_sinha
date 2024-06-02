@@ -2,10 +2,9 @@ import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import myImg from "../../Assets/avatar.svg";
 import Tilt from "react-parallax-tilt";
+import ContactForm from "./ContactForm";
 import {
   AiFillGithub,
-  AiOutlineTwitter,
-  AiFillInstagram,
 } from "react-icons/ai";
 import { FaLinkedinIn } from "react-icons/fa";
 
@@ -56,6 +55,10 @@ function Home2() {
           </Col>
         </Row>
         <Row>
+          
+         
+        </Row>
+        <Row>
           <Col md={12} className="home-about-social">
             <h1>FIND ME ON</h1>
             <p>
@@ -87,6 +90,7 @@ function Home2() {
           </Col>
         </Row>
       </Container>
+      <ContactForm/>
     </Container>
   );
 }

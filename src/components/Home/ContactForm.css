@@ -1,0 +1,42 @@
+.ContactForm {
+    background-color: black;
+    padding: 20px;
+    border-radius: 8px;
+  }
+  
+  .contact-heading {
+    font-size: 2.5rem;
+    background: linear-gradient(90deg, #ff7e5f, #feb47b);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: gradientAnimation 3s infinite;
+  }
+  
+  @keyframes gradientAnimation {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+  
+  .formRow {
+    margin-bottom: 15px;
+  }
+  
+  .formInput {
+    margin-bottom: 10px;
+  }
+  
+  .errorMessage {
+    color: red;
+  }
+  
+  .submit-btn {
+    margin-top: 10px;
+  }
+  
