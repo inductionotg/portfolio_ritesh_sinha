@@ -18,25 +18,25 @@ const ContactForm = () => {
       type: '',
     });
     
-    // Shows alert message for form submission feedback
+    
     const toggleAlert = (message, type) => {
       setAlertInfo({ display: true, message, type });
     
-      // Hide alert after 5 seconds
+      
       setTimeout(() => {
         setAlertInfo({ display: false, message: '', type: '' });
       }, 5000);
     };
     
-    // Function called on submit that uses emailjs to send email of valid contact form
+    
     const onSubmit = async (data) => {
       // Destrcture data object
       const { name, email, subject, message } = data;
       try {
-        // Disable form while processing submission
+       
         setDisabled(true);
     
-        // Define template params
+       
         const templateParams = {
           name,
           email,
@@ -44,7 +44,7 @@ const ContactForm = () => {
           message,
         };
     
-        // Use emailjs to email contact form data
+        
         await emailjs.send(
             import.meta.env.VITE_SERVICE_ID,
             import.meta.env.VITE_TEMPLATE_ID,
@@ -52,11 +52,11 @@ const ContactForm = () => {
           import.meta.env.VITE_PUBLIC_KEY
         );
     
-        // Display success alert
+        
         toggleAlert('Form submission was successful!', 'success');
       } catch (e) {
         console.error(e);
-        // Display error alert
+        console.log(e)
         toggleAlert('Uh oh. Something went wrong.', 'danger');
       } finally {
         // Re-enable form submission
